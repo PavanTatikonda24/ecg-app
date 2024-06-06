@@ -14,6 +14,7 @@
 		8BE947A62BFFD85F00AB2C4B /* MyECGAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE947A52BFFD85F00AB2C4B /* MyECGAppTests.swift */; };
 		8BE947B02BFFD85F00AB2C4B /* MyECGAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE947AF2BFFD85F00AB2C4B /* MyECGAppUITests.swift */; };
 		8BE947B22BFFD85F00AB2C4B /* MyECGAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE947B12BFFD85F00AB2C4B /* MyECGAppUITestsLaunchTests.swift */; };
+		8BE947C12C00521E00AB2C4B /* MyECGApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE947C02C00521E00AB2C4B /* MyECGApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,9 @@
 		8BE947AB2BFFD85F00AB2C4B /* MyECGAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyECGAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BE947AF2BFFD85F00AB2C4B /* MyECGAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyECGAppUITests.swift; sourceTree = "<group>"; };
 		8BE947B12BFFD85F00AB2C4B /* MyECGAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyECGAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8BE947BE2BFFDDCA00AB2C4B /* MyECGApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyECGApp.entitlements; sourceTree = "<group>"; };
+		8BE947BF2BFFEF8C00AB2C4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8BE947C02C00521E00AB2C4B /* MyECGApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyECGApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,7 @@
 		8BE947882BFFD85B00AB2C4B = {
 			isa = PBXGroup;
 			children = (
+				8BE947C02C00521E00AB2C4B /* MyECGApp.swift */,
 				8BE947932BFFD85B00AB2C4B /* MyECGApp */,
 				8BE947A42BFFD85F00AB2C4B /* MyECGAppTests */,
 				8BE947AE2BFFD85F00AB2C4B /* MyECGAppUITests */,
@@ -94,6 +99,8 @@
 		8BE947932BFFD85B00AB2C4B /* MyECGApp */ = {
 			isa = PBXGroup;
 			children = (
+				8BE947BF2BFFEF8C00AB2C4B /* Info.plist */,
+				8BE947BE2BFFDDCA00AB2C4B /* MyECGApp.entitlements */,
 				8BE947942BFFD85B00AB2C4B /* MyECGAppApp.swift */,
 				8BE947962BFFD85B00AB2C4B /* ContentView.swift */,
 				8BE947982BFFD85E00AB2C4B /* Assets.xcassets */,
@@ -258,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BE947972BFFD85B00AB2C4B /* ContentView.swift in Sources */,
+				8BE947C12C00521E00AB2C4B /* MyECGApp.swift in Sources */,
 				8BE947952BFFD85B00AB2C4B /* MyECGAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,17 +427,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MyECGApp/MyECGApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MyECGApp/Preview Content\"";
 				DEVELOPMENT_TEAM = MGTXU8Y598;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyECGApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -448,17 +459,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MyECGApp/MyECGApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MyECGApp/Preview Content\"";
 				DEVELOPMENT_TEAM = MGTXU8Y598;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyECGApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -481,7 +495,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MGTXU8Y598;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Pavan-Tatikonda.MyECGAppTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -501,7 +515,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MGTXU8Y598;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Pavan-Tatikonda.MyECGAppTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -516,13 +530,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MGTXU8Y598;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Pavan-Tatikonda.MyECGAppUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -534,13 +552,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MGTXU8Y598;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Pavan-Tatikonda.MyECGAppUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -6,3 +6,13 @@
 //
 
 import Foundation
+import SwiftUI
+
+@main
+struct MyECGAppApp: App {
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+    }
+}
